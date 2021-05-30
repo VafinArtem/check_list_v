@@ -4,14 +4,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>template_maffin_build_0_1</title>
+  <title>Maffin - check list</title>
   <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" crossorigin="anonymous">
   <link href="css/styles.min.css" rel="stylesheet">
 </head>
 
 <body>
+  <header class="header">
+    <div class="header__logo logo">
+      <img src="" alt="Maffin Check List" class="logo__img">
+    </div>
+    <a href="#" class="header__auth"></a>
+  </header>
+  <main class="main">
+    <section class="main__check-list check-list">
+      <h1 class="visually-hidden">Чеклист</h1>
+      <form class="check-list__filters filters">
+        <label class="filters__item">
+          <span class="vissualy-hidden">Проект</span>
+          <select name="project" class="filters__input">
+            <option checked>Выберите проект</option>
+          </select>
+        </label>
+        <label class="filters__item">
+          <span class="vissualy-hidden">Категория</span>
+          <select name="project" class="filters__input">
+            <option checked>Выберите категорию</option>
+          </select>
+        </label>
+        <label class="filters__item">
+          <span class="vissualy-hidden">Фильтр по выполнению</span>
+          <select name="project" class="filters__input">
+            <option checked>Показать все</option>
+          </select>
+        </label>
+      </form>
+      <div class="check-list__add-items">
+        <div class="check-list__add-item">
+          <button class="check-list__button check-list__button--project button">Добавить проект</button>
+          <form action="/" class="">
+            <input type="text" name="new_project">
+          </form>
+        </div>
+        <div class="check-list__add-item">
+        <button class="check-list__button  check-list__button--cathegory button">Добавить категорию</button>
+          <input type="text" name="new_cathegory">
+        </div>
+        <div class="check-list__add-item">
+          <button class="check-list__button check-list__button--cart button">Добавить карточку</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
 
+  </footer>
 </body>
 
 </html>
