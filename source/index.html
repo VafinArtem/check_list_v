@@ -27,19 +27,19 @@
       <section class="top__filters filters">
         <form class="filters__form">
           <label class="filters__item">
-            <span class="vissualy-hidden">Проект</span>
+            <span class="visually-hidden">Проект</span>
             <select name="project" class="filters__input">
               <option checked>Выберите проект</option>
             </select>
           </label>
           <label class="filters__item">
-            <span class="vissualy-hidden">Категория</span>
+            <span class="visually-hidden">Категория</span>
             <select name="project" class="filters__input">
               <option checked>Выберите категорию</option>
             </select>
           </label>
           <label class="filters__item">
-            <span class="vissualy-hidden">Фильтр по выполнению</span>
+            <span class="visually-hidden">Фильтр по выполнению</span>
             <select name="project" class="filters__input">
               <option checked>Показать все</option>
             </select>
@@ -50,7 +50,10 @@
         <h2 class="visually-hidden">Добавление элементов</h2>
         <div class="add-items__item">
           <button class="add-items__button add-items__button--project button">
-            Добавить проект
+            <svg class="button__icon" width="15" height="12">
+              <use xlink:href="img/sprite.svg#icon-project"></use>
+            </svg>
+            <span class="button__text">Проект</span>
           </button>
           <form action="/" class="add-items__input-box">
             <input type="text" name="new_project" placeholder="Новый проект">
@@ -59,7 +62,10 @@
         </div>
         <div class="add-items__item">
           <button class="add-items__button add-items__button--project button">
-            Добавить категорию
+            <svg class="button__icon" width="15" height="12">
+              <use xlink:href="img/sprite.svg#icon-project"></use>
+            </svg>
+            <span class="button__text">Категория</span>
           </button>
           <form action="/" class="add-items__input-box">
             <input type="text" name="new_cathegory" placeholder="Новая категория">
@@ -68,7 +74,12 @@
         </div>
         <div class="add-items__item">
           <button class="add-items__button add-items__button--project button">
-            Добавить карточку
+            <svg class="button__icon" width="13" height="14">
+              <use xlink:href="img/sprite.svg#icon-card"></use>
+            </svg>
+            <span class="button__text">
+              Карточка
+            </span>
           </button>
         </div>
       </section>

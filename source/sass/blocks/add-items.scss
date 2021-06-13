@@ -1,0 +1,14 @@
+.add-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.add-items__input-box {
+  display: none;
+
+  &.show {
+    display: flex;
+  }
+}
