@@ -1,201 +1,198 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maffin - check list</title>
-    <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" crossorigin="anonymous" />
 
-    <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" crossorigin="anonymous" />
-    <link href="css/styles.min.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maffin - check list</title>
+  <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" crossorigin="anonymous">
+  <link href="css/styles.min.css" rel="stylesheet">
+</head>
 
-  <body>
-    <header class="header">
-      <div class="header__logo logo">
-        <img src="" alt="Maffin Check List" class="logo__img" />
-      </div>
-      <a href="#" class="header__auth"></a>
-    </header>
-    <main class="main">
-      <h1 class="visually-hidden">Чек-лист</h1>
-      <header class="main__top top">
-        <h2 class="visually-hidden">Фильтры</h2>
-        <section class="top__filters filters">
-          <form class="filters__form">
-            <label class="filters__item">
-              <span class="vissualy-hidden">Проект</span>
-              <select name="project" class="filters__input">
-                <option checked>Выберите проект</option>
-              </select>
-            </label>
-            <label class="filters__item">
-              <span class="vissualy-hidden">Категория</span>
-              <select name="project" class="filters__input">
-                <option checked>Выберите категорию</option>
-              </select>
-            </label>
-            <label class="filters__item">
-              <span class="vissualy-hidden">Фильтр по выполнению</span>
-              <select name="project" class="filters__input">
-                <option checked>Показать все</option>
-              </select>
-            </label>
-          </form>
-        </section>
-        <section class="top__add-items add-items">
-          <h2 class="visually-hidden">Добавление элементов</h2>
-          <div class="add-items__item">
-            <button class="add-items__button add-items__button--project button">
-              Добавить проект
-            </button>
-            <form action="/" class="add-items__input-box">
-              <input type="text" name="new_project" placeholder="Новый проект" />
-              <button type="submit" class="add-items__confirm">Подтвердить</button>
-            </form>
-          </div>
-          <div class="add-items__item">
-            <button class="add-items__button add-items__button--project button">
-              Добавить категорию
-            </button>
-            <form action="/" class="add-items__input-box">
-              <input type="text" name="new_cathegory" placeholder="Новая категория" />
-              <button type="submit" class="add-items__confirm">Подтвердить</button>
-            </form>
-          </div>
-          <div class="add-items__item">
-            <button class="add-items__button add-items__button--project button">
-              Добавить карточку
-            </button>
-          </div>
-        </section>
-      </header>
-      <section class="main__checklist checklist">
-        <h2 class="checklist__title">Проект: maffin.pw</h2>
-        <h3 class="checklist__subtitle">В процессе:</h3>
-        <ul class="checklist__list">
-          <li class="checklist__item">
-            <div class="checklist__controls">
-              <button class="checklist__control checklist__control--edit">Редактировать</button>
-              <button class="checklist__control checklist__control--delete">Удалить</button>
-            </div>
-            <label class="checklist__box">
-              <input type="checkbox" name="check-1" class="visually-hidden" />
-              <span class="checklist__check-box"></span>
-              <span class="checklist__name"
-                >Документ проходит проверку на валидность https://validator.w3.org/nu/</span
-              >
-            </label>
-          </li>
-          <li class="checklist__item">
-            <div class="checklist__controls">
-              <button class="checklist__control checklist__control--edit">Редактировать</button>
-              <button class="checklist__control checklist__control--delete">Удалить</button>
-            </div>
-            <label class="checklist__box">
-              <input type="checkbox" name="check-1" class="visually-hidden" />
-              <span class="checklist__check-box"></span>
-              <span class="checklist__name"
-                >В разметке отсутствует дублирование кода для одного и того же элемента, с помощью
-                которого элемент отображается в разных местах...
-              </span>
-            </label>
-          </li>
-          <li class="checklist__item">
-            <div class="checklist__controls">
-              <button class="checklist__control checklist__control--edit">Редактировать</button>
-              <button class="checklist__control checklist__control--delete">Удалить</button>
-            </div>
-            <label class="checklist__box">
-              <input type="checkbox" name="check-1" class="visually-hidden" />
-              <span class="checklist__check-box"></span>
-              <span class="checklist__name"
-                >Подключены правильные шрифты, их размеры, цвет и толщина равны соответствующим
-                параметрам в макетах и техническом задании.
-              </span>
-            </label>
-          </li>
-          <li class="checklist__item">
-            <div class="checklist__controls">
-              <button class="checklist__control checklist__control--edit">Редактировать</button>
-              <button class="checklist__control checklist__control--delete">Удалить</button>
-            </div>
-            <label class="checklist__box">
-              <input type="checkbox" name="check-1" class="visually-hidden" />
-              <span class="checklist__check-box"></span>
-              <span class="checklist__name"
-                >Единообразное написание и форматирование кода в HTML, файлах CSS-препроцессора и
-                JavaScript (включая файлы автоматизации).
-              </span>
-            </label>
-          </li>
-        </ul>
-        <h3 class="checklist__subtitle">Готово:</h3>
-        <ul class="checklist__list">
-          <li class="checklist__item">
-            <div class="checklist__controls">
-              <button class="checklist__control checklist__control--edit">Редактировать</button>
-              <button class="checklist__control checklist__control--delete">Удалить</button>
-            </div>
-            <label class="checklist__box">
-              <input type="checkbox" name="check-1" class="visually-hidden" checked />
-              <span class="checklist__check-box"></span>
-              <span class="checklist__name"
-                >Документ проходит проверку на валидность https://validator.w3.org/nu/</span
-              >
-            </label>
-          </li>
-          <li class="checklist__item">
-            <div class="checklist__controls">
-              <button class="checklist__control checklist__control--edit">Редактировать</button>
-              <button class="checklist__control checklist__control--delete">Удалить</button>
-            </div>
-            <label class="checklist__box">
-              <input type="checkbox" name="check-1" class="visually-hidden" checked />
-              <span class="checklist__check-box"></span>
-              <span class="checklist__name"
-                >В разметке есть правильный вьюпорт тег <code><meta name="viewport" content="width=device-width, initial-scale=1.0"></code></span>
-              </span>
-            </label>
-          </li>
-          <li class="checklist__item">
-            <div class="checklist__controls">
-              <button class="checklist__control checklist__control--edit">Редактировать</button>
-              <button class="checklist__control checklist__control--delete">Удалить</button>
-            </div>
-            <label class="checklist__box">
-              <input type="checkbox" name="check-1" class="visually-hidden" checked />
-              <span class="checklist__check-box"></span>
-              <span class="checklist__name"
-                >Для блока, у которого есть фоновое изображение, прописан фоновый цвет, который соответствует преобладающему...
-              </span>
-            </label>
-          </li>
-          <li class="checklist__item">
-            <div class="checklist__controls">
-              <button class="checklist__control checklist__control--edit">Редактировать</button>
-              <button class="checklist__control checklist__control--delete">Удалить</button>
-            </div>
-            <label class="checklist__box">
-              <input type="checkbox" name="check-1" class="visually-hidden" checked />
-              <span class="checklist__check-box"></span>
-              <span class="checklist__name">Критическая функциональность сайта работоспособна без JavaScript (использовано прогрессивное улучшение).
-              </span>
-            </label>
-          </li>
-        </ul>
+<body>
+  <header class="header">
+    <div class="header__logo logo">
+      <img src="img/common/logo.svg" alt="Maffin Check List" width="166" height="34" class="logo__img">
+    </div>
+    <a href="#" class="header__auth">
+      <svg class="social__img social__img--insta" width="20" height="20">
+        <use xlink:href="img/sprite.svg#icon-login"></use>
+      </svg>
+    </a>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">Чек-лист</h1>
+    <header class="main__top top">
+      <h2 class="visually-hidden">Фильтры</h2>
+      <section class="top__filters filters">
+        <form class="filters__form">
+          <label class="filters__item">
+            <span class="vissualy-hidden">Проект</span>
+            <select name="project" class="filters__input">
+              <option checked>Выберите проект</option>
+            </select>
+          </label>
+          <label class="filters__item">
+            <span class="vissualy-hidden">Категория</span>
+            <select name="project" class="filters__input">
+              <option checked>Выберите категорию</option>
+            </select>
+          </label>
+          <label class="filters__item">
+            <span class="vissualy-hidden">Фильтр по выполнению</span>
+            <select name="project" class="filters__input">
+              <option checked>Показать все</option>
+            </select>
+          </label>
+        </form>
       </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__copyright copyright container">
-        <p class="copyright__text">
-          &copy <a class="copyright__link" href="mailto:a.vafin85@gmail.com">Vafin Artem</a> 2020
-        </p>
-        <p class="copyright__text">
-          Icon made by <a class="copyright__link" href="https://www.flaticon.com/authors/freepik">Freepik</a> from <a
-            class="copyright__link" href="https://www.flaticon.com/">www.flaticon.com</a>
-        </p>
-      </div>
-    </footer>
-  </body>
+      <section class="top__add-items add-items">
+        <h2 class="visually-hidden">Добавление элементов</h2>
+        <div class="add-items__item">
+          <button class="add-items__button add-items__button--project button">
+            Добавить проект
+          </button>
+          <form action="/" class="add-items__input-box">
+            <input type="text" name="new_project" placeholder="Новый проект">
+            <button type="submit" class="add-items__confirm">Подтвердить</button>
+          </form>
+        </div>
+        <div class="add-items__item">
+          <button class="add-items__button add-items__button--project button">
+            Добавить категорию
+          </button>
+          <form action="/" class="add-items__input-box">
+            <input type="text" name="new_cathegory" placeholder="Новая категория">
+            <button type="submit" class="add-items__confirm">Подтвердить</button>
+          </form>
+        </div>
+        <div class="add-items__item">
+          <button class="add-items__button add-items__button--project button">
+            Добавить карточку
+          </button>
+        </div>
+      </section>
+    </header>
+    <section class="main__checklist checklist">
+      <h2 class="checklist__title">Проект: maffin.pw</h2>
+      <h3 class="checklist__subtitle">В процессе:</h3>
+      <ul class="checklist__list">
+        <li class="checklist__item">
+          <div class="checklist__controls">
+            <button class="checklist__control checklist__control--edit">Редактировать</button>
+            <button class="checklist__control checklist__control--delete">Удалить</button>
+          </div>
+          <label class="checklist__box">
+            <input type="checkbox" name="check-1" class="visually-hidden">
+            <span class="checklist__check-box"></span>
+            <span class="checklist__name">Документ проходит проверку на валидность https://validator.w3.org/nu/</span>
+          </label>
+        </li>
+        <li class="checklist__item">
+          <div class="checklist__controls">
+            <button class="checklist__control checklist__control--edit">Редактировать</button>
+            <button class="checklist__control checklist__control--delete">Удалить</button>
+          </div>
+          <label class="checklist__box">
+            <input type="checkbox" name="check-1" class="visually-hidden">
+            <span class="checklist__check-box"></span>
+            <span class="checklist__name">В разметке отсутствует дублирование кода для одного и того же элемента, с помощью
+              которого элемент отображается в разных местах...
+            </span>
+          </label>
+        </li>
+        <li class="checklist__item">
+          <div class="checklist__controls">
+            <button class="checklist__control checklist__control--edit">Редактировать</button>
+            <button class="checklist__control checklist__control--delete">Удалить</button>
+          </div>
+          <label class="checklist__box">
+            <input type="checkbox" name="check-1" class="visually-hidden">
+            <span class="checklist__check-box"></span>
+            <span class="checklist__name">Подключены правильные шрифты, их размеры, цвет и толщина равны соответствующим
+              параметрам в макетах и техническом задании.
+            </span>
+          </label>
+        </li>
+        <li class="checklist__item">
+          <div class="checklist__controls">
+            <button class="checklist__control checklist__control--edit">Редактировать</button>
+            <button class="checklist__control checklist__control--delete">Удалить</button>
+          </div>
+          <label class="checklist__box">
+            <input type="checkbox" name="check-1" class="visually-hidden">
+            <span class="checklist__check-box"></span>
+            <span class="checklist__name">Единообразное написание и форматирование кода в HTML, файлах CSS-препроцессора и
+              JavaScript (включая файлы автоматизации).
+            </span>
+          </label>
+        </li>
+      </ul>
+      <h3 class="checklist__subtitle">Готово:</h3>
+      <ul class="checklist__list">
+        <li class="checklist__item">
+          <div class="checklist__controls">
+            <button class="checklist__control checklist__control--edit">Редактировать</button>
+            <button class="checklist__control checklist__control--delete">Удалить</button>
+          </div>
+          <label class="checklist__box">
+            <input type="checkbox" name="check-1" class="visually-hidden" checked>
+            <span class="checklist__check-box"></span>
+            <span class="checklist__name">Документ проходит проверку на валидность https://validator.w3.org/nu/</span>
+          </label>
+        </li>
+        <li class="checklist__item">
+          <div class="checklist__controls">
+            <button class="checklist__control checklist__control--edit">Редактировать</button>
+            <button class="checklist__control checklist__control--delete">Удалить</button>
+          </div>
+          <label class="checklist__box">
+            <input type="checkbox" name="check-1" class="visually-hidden" checked>
+            <span class="checklist__check-box"></span>
+            <span class="checklist__name">В разметке есть правильный вьюпорт тег
+              <code><meta name="viewport" content="width=device-width, initial-scale=1.0"></code></span>
+            </span>
+          </label>
+        </li>
+        <li class="checklist__item">
+          <div class="checklist__controls">
+            <button class="checklist__control checklist__control--edit">Редактировать</button>
+            <button class="checklist__control checklist__control--delete">Удалить</button>
+          </div>
+          <label class="checklist__box">
+            <input type="checkbox" name="check-1" class="visually-hidden" checked>
+            <span class="checklist__check-box"></span>
+            <span class="checklist__name">Для блока, у которого есть фоновое изображение, прописан фоновый цвет, который соответствует
+              преобладающему...
+            </span>
+          </label>
+        </li>
+        <li class="checklist__item">
+          <div class="checklist__controls">
+            <button class="checklist__control checklist__control--edit">Редактировать</button>
+            <button class="checklist__control checklist__control--delete">Удалить</button>
+          </div>
+          <label class="checklist__box">
+            <input type="checkbox" name="check-1" class="visually-hidden" checked>
+            <span class="checklist__check-box"></span>
+            <span class="checklist__name">Критическая функциональность сайта работоспособна без JavaScript (использовано прогрессивное улучшение).
+            </span>
+          </label>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__copyright copyright container">
+      <p class="copyright__text">
+        &copy <a class="copyright__link" href="mailto:a.vafin85@gmail.com">Vafin Artem</a> 2020
+      </p>
+      <p class="copyright__text">
+        Icon made by <a class="copyright__link" href="https://www.flaticon.com/authors/freepik">Freepik</a> from <a class="copyright__link"
+          href="https://www.flaticon.com/">www.flaticon.com</a>
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>

@@ -1,0 +1,26 @@
+.copyright {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.copyright__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+  text-align: center;
+}
+
+.copyright__link {
+  color: $basic-black;
+
+  &:hover,
+  &:focus {
+    color: $basic-green;
+  }
+}

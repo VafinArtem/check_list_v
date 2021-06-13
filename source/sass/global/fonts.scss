@@ -1,15 +1,8 @@
 @font-face {
-  font-family: "Roboto";
+  font-family: "Manrope";
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-  src: url("../fonts/roboto-regular.woff2") format("woff2"), url("../fonts/roboto-regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: bold;
-  font-display: swap;
-  src: url("../fonts/roboto-bold.woff2") format("woff2"), url("../fonts/roboto-bold.woff") format("woff");
+  src: url("../fonts/Manrope-Regular.woff2") format("woff2"),
+    url("../fonts/Manrope-Regular.woff") format("woff");
 }
