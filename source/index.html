@@ -119,16 +119,21 @@
         </li>
         <li class="checklist__item">
           <div class="checklist__controls">
-            <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
+            <button class="checklist__control checklist__control--save" aria-label="Сохранить"></button>
             <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
           </div>
-          <label class="checklist__box">
+          <label class="checklist__box checklist__box--edit">
+            <span class="visually-hidden">Редактировать текст</span>
+            <textarea name="card_text"
+              class="checklist__edit">Подключены правильные шрифты, их размеры, цвет и толщина равны соответствующим параметрам в макетах и техническом задании.</textarea>
+          </label>
+          <!-- <label class="checklist__box">
             <input type="checkbox" name="check-3" class="checklist__checkbox visually-hidden">
             <span class="checklist__check-box"></span>
             <span class="checklist__name">Подключены правильные шрифты, их размеры, цвет и толщина равны соответствующим
               параметрам в макетах и техническом задании.
             </span>
-          </label>
+          </label> -->
         </li>
         <li class="checklist__item">
           <div class="checklist__controls">
