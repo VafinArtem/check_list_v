@@ -7,8 +7,34 @@
 
 .add-items__input-box {
   display: none;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 5px;
+  border-bottom: 1px solid $basic-black;
 
-  &.show {
+  &--showed {
     display: flex;
   }
+}
+
+.add-items__confirm {
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath d='M7 0a7 7 0 10.001 14.001A7 7 0 007 0zm3.023 4.714l-3.29 4.563a.497.497 0 01-.808 0l-1.948-2.7a.125.125 0 01.101-.199h.733a.5.5 0 01.405.208L6.328 8.13l2.456-3.407a.5.5 0 01.405-.207h.733c.101 0 .16.115.101.198z' fill='%23000'/%3E%3C/svg%3E");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+}
+
+.add-items__input {
+  padding-left: 0;
+  padding-right: 10px;
+  font-family: $font;
+  font-size: inherit;
+  border: 0;
+  background-color: transparent;
 }
