@@ -1,0 +1,123 @@
+.checklist__subtitle {
+  @include clear-margin;
+
+  margin-bottom: 13px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.checklist__list {
+  @include list-none;
+
+  display: grid;
+  row-gap: 19px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.checklist__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  max-height: 100px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 13px;
+  background-color: $basic-orange;
+  border-radius: 10px;
+  box-shadow: 0px 2px 9px $card-shadow;
+  transition: all 0.5s ease-in-out;
+
+  &--complite {
+    background-color: $basic-blue;
+  }
+
+  &--showed {
+    max-height: 1000px;
+  }
+}
+
+.checklist__controls {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+}
+
+.checklist__control {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+
+  &--edit {
+    background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 13'%3E%3Cpath d='M12 11.313H.5a.5.5 0 00-.5.5v.562c0 .069.056.125.125.125h12.25a.125.125 0 00.125-.125v-.563a.5.5 0 00-.5-.5zM2.277 10a.633.633 0 00.093-.008l2.628-.46a.153.153 0 00.083-.044l6.624-6.624a.155.155 0 00.034-.17.155.155 0 00-.034-.05L9.108.045A.155.155 0 008.997 0a.155.155 0 00-.111.045L2.263 6.67a.159.159 0 00-.044.083L1.758 9.38a.523.523 0 00.147.465.53.53 0 00.372.155z' fill='%23000'/%3E%3C/svg%3E");
+  }
+
+  &--delete {
+    background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 13'%3E%3Cpath d='M11.5 2.25h-2V1a1 1 0 00-1-1h-5a1 1 0 00-1 1v1.25h-2a.5.5 0 00-.5.5v.5c0 .069.056.125.125.125h.944l.386 8.172a1 1 0 00.998.953h7.094a.999.999 0 00.998-.953l.386-8.172h.944A.125.125 0 0012 3.25v-.5a.5.5 0 00-.5-.5zm-3.125 0h-4.75V1.125h4.75V2.25z' fill='%23000'/%3E%3C/svg%3E");
+  }
+
+  &--save {
+    background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 13'%3E%3Cpath d='M12.208 2.833L9.668.293A1 1 0 008.958 0H.5a.5.5 0 00-.5.5V12a.5.5 0 00.5.5H12a.5.5 0 00.5-.5V3.54a.997.997 0 00-.292-.707zM4.25 1h4v1.75h-4V1zm2 8.656a2.25 2.25 0 11.001-4.5 2.25 2.25 0 01-.001 4.5zm0-3.5a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z' fill='%23000'/%3E%3C/svg%3E");
+  }
+}
+
+.checklist__box {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  column-gap: 11px;
+}
+
+.checklist__check-box {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M19.2 0H.8a.8.8 0 00-.8.8v18.4a.8.8 0 00.8.8h18.4a.8.8 0 00.8-.8V.8a.8.8 0 00-.8-.8zm-1 18.2H1.8V1.8h16.4v16.4z' fill='%23000'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.checklist__name {
+  max-width: 89%;
+}
+
+.checklist__checkbox {
+  &:checked {
+    & + .checklist__check-box {
+      background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M8.028 13.643a.795.795 0 001.292 0l5.265-7.3a.2.2 0 00-.163-.318H13.25a.796.796 0 00-.648.332l-3.927 5.45-1.78-2.47a.8.8 0 00-.647-.332H5.075a.2.2 0 00-.162.317l3.115 4.32z' fill='%23000'/%3E%3Cpath d='M19.2 0H.8a.8.8 0 00-.8.8v18.4a.8.8 0 00.8.8h18.4a.8.8 0 00.8-.8V.8a.8.8 0 00-.8-.8zm-1 18.2H1.8V1.8h16.4v16.4z' fill='%23000'/%3E%3C/svg%3E");
+    }
+  }
+}
+
+.checklist__show-button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 25px;
+  height: 14px;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 8'%3E%3Cpath d='M1 1c7 8 7 8 14 0' stroke='%23000'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  transition: all 0.5s ease-in-out;
+
+  &--showed {
+    transform: rotate(180deg);
+  }
+}
