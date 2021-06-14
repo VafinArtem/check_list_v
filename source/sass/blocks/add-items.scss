@@ -7,6 +7,11 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(4, minmax(169px, 1fr));
   }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(3, minmax(165px, 1fr));
+    column-gap: 30px;
+  }
 }
 
 .add-items__input-box {
