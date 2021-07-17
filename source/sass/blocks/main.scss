@@ -7,6 +7,12 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 60px;
   }
+
+  &--login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .main__top {
