@@ -9,228 +9,225 @@
   <link href="css/styles.min.css" rel="stylesheet">
 </head>
 
-<body>
-  <header class="header">
-    <div class="header__logo logo">
-      <img src="img/common/logo.svg" alt="Maffin Check List" width="166" height="34" class="logo__img">
-    </div>
-    <a href="#" class="header__auth">
-      <svg class="header__auth-icon" width="20" height="20">
-        <use xlink:href="img/sprite.svg#icon-login"></use>
-      </svg>
-    </a>
-  </header>
-  <main class="main">
-    <h1 class="visually-hidden">Чек-лист</h1>
-    <header class="main__top top">
-      <h2 class="visually-hidden">Фильтры</h2>
-      <section class="top__filters filters">
-        <form class="filters__form">
-          <label class="filters__item">
-            <span class="visually-hidden">Проект</span>
-            <select name="project" class="filters__input">
-              <option checked>Выберите проект</option>
-              <option>maffin.pw</option>
-              <option>amrita-dent</option>
-            </select>
-          </label>
-          <label class="filters__item">
-            <span class="visually-hidden">Категория</span>
-            <select name="project" class="filters__input">
-              <option checked>Выберите категорию</option>
-            </select>
-          </label>
-          <label class="filters__item">
-            <span class="visually-hidden">Фильтр по выполнению</span>
-            <select name="project" class="filters__input">
-              <option checked>Показать все</option>
-              <option>Выполненные</option>
-              <option>Не выполненные</option>
-            </select>
-          </label>
-        </form>
-      </section>
-      <section class="top__add-items add-items">
-        <h2 class="visually-hidden">Добавление элементов</h2>
-        <div class="add-items__item">
-          <button class="add-items__button button">
-            <svg class="button__icon" width="15" height="12">
-              <use xlink:href="img/sprite.svg#icon-project"></use>
-            </svg>
-            <span class="button__text">Проект</span>
-          </button>
-          <form action="/" class="add-items__input-box">
-            <input type="text" name="new_project" placeholder="Новый проект">
-            <button type="submit" class="add-items__confirm">Подтвердить</button>
-          </form>
-        </div>
-        <div class="add-items__item">
-          <button class="add-items__button button">
-            <svg class="button__icon" width="15" height="12">
-              <use xlink:href="img/sprite.svg#icon-project"></use>
-            </svg>
-            <span class="button__text">Категория</span>
-          </button>
-          <form action="/" class="add-items__input-box add-items__input-box--showed">
-            <input type="text" class="add-items__input" name="new_cathegory" placeholder="Новая категория">
-            <button type="submit" class="add-items__confirm" aria-label="Подтвердить"></button>
-          </form>
-        </div>
-        <div class="add-items__item">
-          <button class="add-items__button button">
-            <svg class="button__icon" width="13" height="14">
-              <use xlink:href="img/sprite.svg#icon-card"></use>
-            </svg>
-            <span class="button__text">
-              Карточка
-            </span>
-          </button>
-        </div>
-      </section>
+<body class="body">
+  <div class="body__wrapper">
+    <header class="header">
+      <div class="header__logo logo">
+        <a href="/" class="logo__link">
+          <img src="img/common/logo.svg" alt="Maffin Check List" width="166" height="34" class="logo__img">
+        </a>
+      </div>
+      <a href="#" class="header__auth">
+        <svg class="header__auth-icon" width="20" height="20">
+          <use xlink:href="img/sprite.svg#icon-login"></use>
+        </svg>
+      </a>
     </header>
-    <section class="main__checklist checklist">
-      <h2 class="checklist__title visually-hidden">Проект: maffin.pw</h2>
-      <h3 class="checklist__subtitle">В процессе:</h3>
-      <ul class="checklist__list">
-        <li class="checklist__item">
-          <div class="checklist__inner">
-            <div class="checklist__controls">
-              <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
-              <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
-            </div>
-            <label class="checklist__box">
-              <input type="checkbox" name="check-1" class="checklist__checkbox visually-hidden">
-              <span class="checklist__check-box"></span>
-              <span class="checklist__name">Документ проходит проверку на валидность https://validator.w3.org/nu/</span>
+    <main class="main">
+      <h1 class="visually-hidden">Чек-лист</h1>
+      <header class="main__top top">
+        <h2 class="visually-hidden">Фильтры</h2>
+        <section class="top__filters filters">
+          <form class="filters__form">
+            <label class="filters__item">
+              <span class="visually-hidden">Проект</span>
+              <select name="project" class="filters__input">
+                <option checked>Выберите проект</option>
+                <option>maffin.pw</option>
+                <option>amrita-dent</option>
+              </select>
             </label>
+            <label class="filters__item">
+              <span class="visually-hidden">Категория</span>
+              <select name="project" class="filters__input">
+                <option checked>Выберите категорию</option>
+              </select>
+            </label>
+            <label class="filters__item">
+              <span class="visually-hidden">Фильтр по выполнению</span>
+              <select name="project" class="filters__input">
+                <option checked>Показать все</option>
+                <option>Выполненные</option>
+                <option>Не выполненные</option>
+              </select>
+            </label>
+          </form>
+        </section>
+        <section class="top__add-items add-items">
+          <h2 class="visually-hidden">Добавление элементов</h2>
+          <div class="add-items__item">
+            <button class="add-items__button button">
+              <svg class="button__icon" width="15" height="12">
+                <use xlink:href="img/sprite.svg#icon-project"></use>
+              </svg>
+              <span class="button__text">Проект</span>
+            </button>
+            <form action="/" class="add-items__input-box">
+              <input type="text" name="new_project" placeholder="Новый проект">
+              <button type="submit" class="add-items__confirm">Подтвердить</button>
+            </form>
           </div>
-        </li>
-        <li class="checklist__item">
-          <div class="checklist__inner checklist__inner--showed">
-            <div class="checklist__controls">
-              <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
-              <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
-            </div>
-            <label class="checklist__box">
-              <input type="checkbox" name="check-2" class="checklist__checkbox visually-hidden">
-              <span class="checklist__check-box"></span>
-              <span class="checklist__name">В разметке отсутствует дублирование кода для одного и того же элемента, с помощью которого элемент
-                отображается в разных местах страницы на разных версиях: мобильной, десктопной, планшетной
+          <div class="add-items__item">
+            <button class="add-items__button button">
+              <svg class="button__icon" width="15" height="12">
+                <use xlink:href="img/sprite.svg#icon-project"></use>
+              </svg>
+              <span class="button__text">Категория</span>
+            </button>
+            <form action="/" class="add-items__input-box add-items__input-box--showed">
+              <input type="text" class="add-items__input" name="new_cathegory" placeholder="Новая категория">
+              <button type="submit" class="add-items__confirm" aria-label="Подтвердить"></button>
+            </form>
+          </div>
+          <div class="add-items__item">
+            <button class="add-items__button button">
+              <svg class="button__icon" width="13" height="14">
+                <use xlink:href="img/sprite.svg#icon-card"></use>
+              </svg>
+              <span class="button__text">
+                Карточка
               </span>
-            </label>
-            <button class="checklist__show-button checklist__show-button--showed" aria-label="Скрыть"></button>
+            </button>
           </div>
-        </li>
-        <li class="checklist__item">
-          <div class="checklist__inner">
-            <div class="checklist__controls">
-              <button class="checklist__control checklist__control--save" aria-label="Сохранить"></button>
-              <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+        </section>
+      </header>
+      <section class="main__checklist checklist">
+        <h2 class="checklist__title visually-hidden">Проект: maffin.pw</h2>
+        <h3 class="checklist__subtitle">В процессе:</h3>
+        <ul class="checklist__list">
+          <li class="checklist__item">
+            <div class="checklist__inner">
+              <div class="checklist__controls">
+                <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
+                <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+              </div>
+              <label class="checklist__box">
+                <input type="checkbox" name="check-1" class="checklist__checkbox visually-hidden">
+                <span class="checklist__check-box"></span>
+                <span class="checklist__name">Документ проходит проверку на валидность https://validator.w3.org/nu/</span>
+              </label>
             </div>
-            <label class="checklist__box checklist__box--edit">
-              <span class="visually-hidden">Редактировать текст</span>
-              <textarea name="card_text"
-                class="checklist__edit">Подключены правильные шрифты, их размеры, цвет и толщина равны соответствующим параметрам в макетах и техническом задании.</textarea>
-            </label>
-            <!-- <label class="checklist__box">
-            <input type="checkbox" name="check-3" class="checklist__checkbox visually-hidden">
-            <span class="checklist__check-box"></span>
-            <span class="checklist__name">Подключены правильные шрифты, их размеры, цвет и толщина равны соответствующим
-              параметрам в макетах и техническом задании.
-            </span>
-          </label> -->
-          </div>
-        </li>
-        <li class="checklist__item">
-          <div class="checklist__inner">
-            <div class="checklist__controls">
-              <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
-              <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+          </li>
+          <li class="checklist__item">
+            <div class="checklist__inner checklist__inner--showed">
+              <div class="checklist__controls">
+                <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
+                <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+              </div>
+              <label class="checklist__box">
+                <input type="checkbox" name="check-2" class="checklist__checkbox visually-hidden">
+                <span class="checklist__check-box"></span>
+                <span class="checklist__name">В разметке отсутствует дублирование кода для одного и того же элемента, с помощью которого элемент
+                  отображается в разных местах страницы на разных версиях: мобильной, десктопной, планшетной
+                </span>
+              </label>
+              <button class="checklist__show-button checklist__show-button--showed" aria-label="Скрыть"></button>
             </div>
-            <label class="checklist__box">
-              <input type="checkbox" name="check-4" class="checklist__checkbox visually-hidden">
-              <span class="checklist__check-box"></span>
-              <span class="checklist__name">Единообразное написание и форматирование кода в HTML, файлах CSS-препроцессора и
-                JavaScript (включая файлы автоматизации).
-              </span>
-            </label>
-          </div>
-        </li>
-      </ul>
-      <h3 class="checklist__subtitle">Готово:</h3>
-      <ul class="checklist__list">
-        <li class="checklist__item checklist__item--complite">
-          <div class="checklist__inner checklist__inner--complite">
-            <div class="checklist__controls">
-              <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
-              <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+          </li>
+          <li class="checklist__item">
+            <div class="checklist__inner">
+              <div class="checklist__controls">
+                <button class="checklist__control checklist__control--save" aria-label="Сохранить"></button>
+                <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+              </div>
+              <label class="checklist__box checklist__box--edit">
+                <span class="visually-hidden">Редактировать текст</span>
+                <textarea name="card_text"
+                  class="checklist__edit">Подключены правильные шрифты, их размеры, цвет и толщина равны соответствующим параметрам в макетах и техническом задании.</textarea>
+              </label>
             </div>
-            <label class="checklist__box">
-              <input type="checkbox" name="check-5" class="checklist__checkbox visually-hidden" checked>
-              <span class="checklist__check-box"></span>
-              <span class="checklist__name">Документ проходит проверку на валидность https://validator.w3.org/nu/</span>
-            </label>
-          </div>
-        </li>
-        <li class="checklist__item checklist__item--complite">
-          <div class="checklist__inner checklist__inner--complite">
-            <div class="checklist__controls">
-              <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
-              <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+          </li>
+          <li class="checklist__item">
+            <div class="checklist__inner">
+              <div class="checklist__controls">
+                <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
+                <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+              </div>
+              <label class="checklist__box">
+                <input type="checkbox" name="check-4" class="checklist__checkbox visually-hidden">
+                <span class="checklist__check-box"></span>
+                <span class="checklist__name">Единообразное написание и форматирование кода в HTML, файлах CSS-препроцессора и
+                  JavaScript (включая файлы автоматизации).
+                </span>
+              </label>
             </div>
-            <label class="checklist__box">
-              <input type="checkbox" name="check-6" class="checklist__checkbox visually-hidden" checked>
-              <span class="checklist__check-box"></span>
-              <span class="checklist__name">В разметке есть правильный вьюпорт тег
-                <code><meta name="viewport" content="width=device-width, initial-scale=1.0"></code></span>
-              </span>
-            </label>
-          </div>
-        </li>
-        <li class="checklist__item checklist__item--complite">
-          <div class="checklist__inner checklist__inner--complite">
-            <div class="checklist__controls">
-              <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
-              <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+          </li>
+        </ul>
+        <h3 class="checklist__subtitle">Готово:</h3>
+        <ul class="checklist__list">
+          <li class="checklist__item checklist__item--complite">
+            <div class="checklist__inner checklist__inner--complite">
+              <div class="checklist__controls">
+                <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
+                <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+              </div>
+              <label class="checklist__box">
+                <input type="checkbox" name="check-5" class="checklist__checkbox visually-hidden" checked>
+                <span class="checklist__check-box"></span>
+                <span class="checklist__name">Документ проходит проверку на валидность https://validator.w3.org/nu/</span>
+              </label>
             </div>
-            <label class="checklist__box">
-              <input type="checkbox" name="check-7" class="checklist__checkbox visually-hidden" checked>
-              <span class="checklist__check-box"></span>
-              <span class="checklist__name">Для блока, у которого есть фоновое изображение, прописан фоновый цвет, который соответствует
-                преобладающему...
-              </span>
-            </label>
-            <button class="checklist__show-button" aria-label="Показать весь текст"></button>
-          </div>
-        </li>
-        <li class="checklist__item checklist__item--complite">
-          <div class="checklist__inner checklist__inner--complite">
-            <div class="checklist__controls">
-              <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
-              <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+          </li>
+          <li class="checklist__item checklist__item--complite">
+            <div class="checklist__inner checklist__inner--complite">
+              <div class="checklist__controls">
+                <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
+                <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+              </div>
+              <label class="checklist__box">
+                <input type="checkbox" name="check-6" class="checklist__checkbox visually-hidden" checked>
+                <span class="checklist__check-box"></span>
+                <span class="checklist__name">В разметке есть правильный вьюпорт тег
+                  <code><meta name="viewport" content="width=device-width, initial-scale=1.0"></code></span>
+                </span>
+              </label>
             </div>
-            <label class="checklist__box">
-              <input type="checkbox" name="check-8" class="checklist__checkbox visually-hidden" checked>
-              <span class="checklist__check-box"></span>
-              <span class="checklist__name">Критическая функциональность сайта работоспособна без JavaScript (использовано прогрессивное улучшение).
-              </span>
-            </label>
-          </div>
-        </li>
-      </ul>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__copyright copyright container">
-      <p class="copyright__text">
-        &copy <a class="copyright__link" href="mailto:a.vafin85@gmail.com">Vafin Artem</a> 2020
-      </p>
-      <p class="copyright__text">
-        Icon made by <a class="copyright__link" href="https://www.flaticon.com/authors/freepik">Freepik</a> from <a class="copyright__link"
-          href="https://www.flaticon.com/">www.flaticon.com</a>
-      </p>
-    </div>
-  </footer>
+          </li>
+          <li class="checklist__item checklist__item--complite">
+            <div class="checklist__inner checklist__inner--complite">
+              <div class="checklist__controls">
+                <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
+                <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+              </div>
+              <label class="checklist__box">
+                <input type="checkbox" name="check-7" class="checklist__checkbox visually-hidden" checked>
+                <span class="checklist__check-box"></span>
+                <span class="checklist__name">Для блока, у которого есть фоновое изображение, прописан фоновый цвет, который соответствует
+                  преобладающему...
+                </span>
+              </label>
+              <button class="checklist__show-button" aria-label="Показать весь текст"></button>
+            </div>
+          </li>
+          <li class="checklist__item checklist__item--complite">
+            <div class="checklist__inner checklist__inner--complite">
+              <div class="checklist__controls">
+                <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
+                <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+              </div>
+              <label class="checklist__box">
+                <input type="checkbox" name="check-8" class="checklist__checkbox visually-hidden" checked>
+                <span class="checklist__check-box"></span>
+                <span class="checklist__name">Критическая функциональность сайта работоспособна без JavaScript (использовано прогрессивное улучшение).
+                </span>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__copyright copyright container">
+        <p class="copyright__text">
+          &copy <a class="copyright__link" href="mailto:a.vafin85@gmail.com">Vafin Artem</a> 2020
+        </p>
+        <p class="copyright__text">
+          Icon made by <a class="copyright__link" href="https://www.flaticon.com/authors/freepik">Freepik</a> from <a class="copyright__link"
+            href="https://www.flaticon.com/">www.flaticon.com</a>
+        </p>
+      </div>
+    </footer>
+  </div>
   <script src="js/bundle.js"></script>
 </body>
 
