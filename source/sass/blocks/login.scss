@@ -42,6 +42,7 @@
     grid-template-columns: repeat(2, auto);
     gap: 20px;
     align-items: start;
+    width: fit-content;
   }
 
   @media (min-width: $desktop-width) {
