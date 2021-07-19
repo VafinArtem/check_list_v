@@ -54,11 +54,11 @@
             <form action="/" class="login__form">
               <label class="login__input-wrapper">
                 <span class="visually-hidden">Введите e-mail</span>
-                <input type="text" name="email" class="login__input" placeholder="Введите e-mail">
+                <input type="text" name="email" class="login__input login__input--succes" placeholder="Введите e-mail">
               </label>
               <label class="login__input-wrapper">
                 <span class="visually-hidden">Введите пароль</span>
-                <input type="text" name="password" class="login__input" placeholder="Введите пароль">
+                <input type="text" name="password" class="login__input login__input--error" placeholder="Введите пароль">
               </label>
               <label class="login__input-wrapper">
                 <span class="visually-hidden">Подтвердите пароль</span>
@@ -81,6 +81,9 @@
         </p>
       </div>
     </footer>
+  </div>
+  <div class="toast toast--error">
+    <p class="toast__text">Такого пользователя не существует</p>
   </div>
   <script src="js/bundle.js"></script>
 </body>
