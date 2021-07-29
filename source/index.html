@@ -30,28 +30,54 @@
         <h2 class="visually-hidden">Фильтры</h2>
         <section class="top__filters filters">
           <form class="filters__form">
-            <label class="filters__item">
-              <span class="visually-hidden">Проект</span>
-              <select name="project" class="filters__input">
-                <option checked>Проект</option>
-                <option>maffin.pw</option>
-                <option>amrita-dent</option>
-              </select>
-            </label>
-            <label class="filters__item">
-              <span class="visually-hidden">Категория</span>
-              <select name="project" class="filters__input">
-                <option checked>Категория</option>
-              </select>
-            </label>
-            <label class="filters__item">
-              <span class="visually-hidden">Фильтр по выполнению</span>
-              <select name="project" class="filters__input">
-                <option checked>Показать все</option>
-                <option>Выполненные</option>
-                <option>Не выполненные</option>
-              </select>
-            </label>
+            <div class="item__select select">
+              <div class="select__wrapper">
+                <div class="select__inner">
+                  <p class="select__input" aria-label="Выберите проект" tabindex="0">По умолчанию</p>
+                  <ul class="select__list">
+                    <li class="select__item select__item--active" tabindex="0" data-value="по умолчанию">
+                      По умолчанию
+                    </li>
+                    <li class="select__item" tabindex="0" data-value="maffin.pw">
+                      maffin.pw
+                    </li>
+                    <li class="select__item" tabindex="0" data-value="amrita-dent">
+                      amrita-dent
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="item__select select">
+              <div class="select__wrapper">
+                <div class="select__inner">
+                  <p class="select__input" aria-label="Выберите проект" tabindex="0">Категория</p>
+                  <ul class="select__list">
+                    <li class="select__item select__item--active" tabindex="0" data-value="Категория">
+                      Категория
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="item__select select">
+              <div class="select__wrapper">
+                <div class="select__inner">
+                  <p class="select__input" aria-label="Выберите проект" tabindex="0">Показать все</p>
+                  <ul class="select__list">
+                    <li class="select__item select__item--active" tabindex="0" data-value="Выполненные">
+                      Показать все
+                    </li>
+                    <li class="select__item" tabindex="0" data-value="Выполненные">
+                      Выполненные
+                    </li>
+                    <li class="select__item" tabindex="0" data-value="Выполненные">
+                      Не выполненные
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </form>
         </section>
         <section class="top__add-items add-items">
@@ -110,7 +136,7 @@
             </div>
           </li>
           <li class="checklist__item">
-            <div class="checklist__inner checklist__inner--showed">
+            <div class="checklist__inner">
               <div class="checklist__controls">
                 <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
                 <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
