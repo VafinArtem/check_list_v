@@ -5,7 +5,7 @@
   row-gap: 20px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(4, minmax(169px, 1fr));
+    grid-template-columns: repeat(3, minmax(169px, 1fr));
   }
 
   @media (min-width: $desktop-width) {
