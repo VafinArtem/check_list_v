@@ -26,7 +26,6 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 100px;
     column-gap: 20px;
     row-gap: 22px;
   }
@@ -179,4 +178,16 @@
   @media (min-width: $desktop-width) {
     font-size: 16px;
   }
+}
+
+.checklist__complite {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.checklist__complite-icon {
+  animation-name: zoomIn;
+  animation-duration: 1s;
 }
