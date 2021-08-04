@@ -82,7 +82,7 @@ exports.webp = iwebp;
 
 const copy = () => {
   return gulp
-    .src(["source/fonts/**/*.{woff,woff2}", "source/img/**"], {
+    .src(["source/fonts/**/*.{woff,woff2}", "source/img/**", "source/favicon.*"], {
       base: "source",
     })
     .pipe(gulp.dest("build"));
