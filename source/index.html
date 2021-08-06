@@ -22,12 +22,17 @@
           <img src="img/common/logo.svg" alt="Maffin Check List" width="166" height="34" class="logo__img">
         </a>
       </div>
-      <a href="#" class="header__auth">
+      <a href="#" class="header__auth" aria-label="Login / Logout">
         <span class="header__auth-text">a.vafin85@gmail.com</span>
-        <svg class="header__auth-icon" width="20" height="20">
+        <svg class="header__icon" width="20" height="20">
           <use xlink:href="img/sprite.svg#icon-login"></use>
         </svg>
       </a>
+      <button class="header__about" aria-label="О проекте">
+        <svg class="header__icon" width="20" height="20">
+          <use xlink:href="img/sprite.svg#icon-question"></use>
+        </svg>
+      </button>
     </header>
     <main class="main">
       <h1 class="visually-hidden">Чек-лист</h1>
@@ -253,7 +258,7 @@
           </li>
         </ul>
       </section>
-      <div class="about-popup">
+      <div class="about-popup" style="display: none;">
         <h2 class="about-popup__title">О проекте</h2>
         <p class="about-popup__text">
           Этот проект создан frontend-разработчиком, для прокачки скилов и решении проблемы с проверкой своих проектов по определенным
