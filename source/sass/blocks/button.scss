@@ -22,14 +22,23 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: flex-start;
-    padding: 0;
-    font-size: 16px;
-    background-color: transparent;
+    &--menu {
+      justify-content: flex-start;
+      padding: 0;
+      font-size: 16px;
+      background-color: transparent;
 
-    &:hover,
-    &:focus {
-      color: $basic-blue-fourth;
+      &:hover,
+      &:focus {
+        color: $basic-blue-fourth;
+      }
+    }
+
+    &--form {
+      &:hover,
+      &:focus {
+        background-color: $basic-blue;
+      }
     }
   }
 }
