@@ -1,9 +1,22 @@
+.checklist {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
 .checklist__subtitle {
   @include clear-margin;
 
+  width: fit-content;
   margin-bottom: 13px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 23px;
@@ -12,6 +25,22 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 20px;
   }
+
+  &--ready {
+    background-color: $basic-blue-second;
+  }
+
+  &--in-process {
+    background-color: $second-orange;
+  }
+}
+
+.checklist__container {
+  @media (max-width: $mobile-width-only) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .checklist__list {
@@ -19,23 +48,19 @@
 
   display: grid;
   row-gap: 19px;
-
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
+  grid-auto-rows: min-content;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
     row-gap: 22px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     column-gap: 30px;
-
-    &:not(:last-child) {
-      margin-bottom: 39px;
-    }
   }
 }
 
@@ -43,30 +68,43 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 100px;
+  min-height: 75px;
 }
 
 .checklist__inner {
+  position: relative;
   width: 100%;
   height: 100%;
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
   padding-right: 13px;
-  background-color: $basic-orange;
-  border-radius: 0px;
+  background-color: $basic-white;
+  border: 1px solid $basic-gray;
+  border-radius: 0;
   transition: all 0.5s ease-in-out;
 
-  &--complite {
-    background-color: $basic-blue;
+  &--showed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(75px * 2);
+    z-index: 1;
   }
 
-  &--showed {
-    height: fit-content;
-    min-height: 100px;
-    max-height: 1000px;
-    box-shadow: 0 2px 9px $card-shadow-edit;
-    z-index: 1;
+  &::before {
+    @include pseudo;
+    width: 6px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $second-orange;
+  }
+
+  &--complite {
+    &::before {
+      background-color: $basic-blue-second;
+    }
   }
 }
 
@@ -112,10 +150,11 @@
   grid-template-columns: 20px 1fr;
   column-gap: 11px;
   max-width: 89%;
+  height: 100%;
+  cursor: pointer;
 
   &--edit {
     grid-template-columns: 1fr;
-    height: 100%;
   }
 }
 
@@ -163,22 +202,23 @@
   width: 100%;
   height: 100%;
   font-family: inherit;
-  background-color: $basic-orange;
-  border: 1px solid $basic-black;
+  border: 1px solid $third-gray;
   resize: none;
 
   @media (min-width: $desktop-width) {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 .checklist__name {
   @media (min-width: $desktop-width) {
-    font-size: 16px;
+    font-size: 14px;
+    overflow: hidden;
   }
 }
 
 .checklist__complite {
+  grid-column: 1/-1;
   display: flex;
   justify-content: center;
   padding-top: 50px;

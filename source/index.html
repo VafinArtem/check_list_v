@@ -94,7 +94,7 @@
         <section class="top__add-items add-items">
           <h2 class="visually-hidden">Добавление элементов</h2>
           <div class="add-items__item">
-            <button class="add-items__button button">
+            <button class="add-items__button button button--menu">
               <svg class="button__icon" width="20" height="17">
                 <use xlink:href="img/sprite.svg#icon-add"></use>
               </svg>
@@ -106,7 +106,7 @@
             </form>
           </div>
           <div class="add-items__item">
-            <button class="add-items__button button">
+            <button class="add-items__button button button--menu">
               <svg class="button__icon" width="20" height="17">
                 <use xlink:href="img/sprite.svg#icon-add"></use>
               </svg>
@@ -118,7 +118,7 @@
             </form>
           </div>
           <div class="add-items__item">
-            <button class="add-items__button button">
+            <button class="add-items__button button button--menu">
               <svg class="button__icon" width="20" height="17">
                 <use xlink:href="img/sprite.svg#icon-add"></use>
               </svg>
@@ -136,127 +136,132 @@
             <use xlink:href="img/sprite.svg#icon-complite"></use>
           </svg>
         </div>
-        <h3 class="checklist__subtitle">В процессе:</h3>
-        <ul class="checklist__list">
-          <li class="checklist__item">
-            <div class="checklist__inner">
-              <div class="checklist__controls">
-                <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
-                <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+        <div class="checklist__container">
+          <h3 class="checklist__subtitle checklist__subtitle--in-process">В процессе</h3>
+          <ul class="checklist__list">
+            <li class="checklist__item">
+              <div class="checklist__inner">
+                <div class="checklist__controls">
+                  <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
+                  <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+                </div>
+                <label class="checklist__box">
+                  <input type="checkbox" name="check-1" class="checklist__checkbox visually-hidden">
+                  <span class="checklist__check-box"></span>
+                  <span class="checklist__name">Документ проходит проверку на валидность https://validator.w3.org/nu/</span>
+                </label>
               </div>
-              <label class="checklist__box">
-                <input type="checkbox" name="check-1" class="checklist__checkbox visually-hidden">
-                <span class="checklist__check-box"></span>
-                <span class="checklist__name">Документ проходит проверку на валидность https://validator.w3.org/nu/</span>
-              </label>
-            </div>
-          </li>
-          <li class="checklist__item">
-            <div class="checklist__inner">
-              <div class="checklist__controls">
-                <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
-                <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+            </li>
+            <li class="checklist__item">
+              <div class="checklist__inner">
+                <div class="checklist__controls">
+                  <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
+                  <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+                </div>
+                <label class="checklist__box">
+                  <input type="checkbox" name="check-2" class="checklist__checkbox visually-hidden">
+                  <span class="checklist__check-box"></span>
+                  <span class="checklist__name">В разметке отсутствует дублирование кода для одного и того же элемента, с помощью которого элемент
+                    отображается в разных местах страницы на разных версиях: мобильной, десктопной, планшетной
+                  </span>
+                </label>
+                <button class="checklist__show-button checklist__show-button--showed" aria-label="Скрыть"></button>
               </div>
-              <label class="checklist__box">
-                <input type="checkbox" name="check-2" class="checklist__checkbox visually-hidden">
-                <span class="checklist__check-box"></span>
-                <span class="checklist__name">В разметке отсутствует дублирование кода для одного и того же элемента, с помощью которого элемент
-                  отображается в разных местах страницы на разных версиях: мобильной, десктопной, планшетной
-                </span>
-              </label>
-              <button class="checklist__show-button checklist__show-button--showed" aria-label="Скрыть"></button>
-            </div>
-          </li>
-          <li class="checklist__item">
-            <div class="checklist__inner">
-              <div class="checklist__controls">
-                <button class="checklist__control checklist__control--save" aria-label="Сохранить"></button>
-                <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+            </li>
+            <li class="checklist__item">
+              <div class="checklist__inner">
+                <div class="checklist__controls">
+                  <button class="checklist__control checklist__control--save" aria-label="Сохранить"></button>
+                  <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+                </div>
+                <label class="checklist__box checklist__box--edit">
+                  <span class="visually-hidden">Редактировать текст</span>
+                  <textarea name="card_text"
+                    class="checklist__edit">Подключены правильные шрифты, их размеры, цвет и толщина равны соответствующим параметрам в макетах и техническом задании.</textarea>
+                </label>
               </div>
-              <label class="checklist__box checklist__box--edit">
-                <span class="visually-hidden">Редактировать текст</span>
-                <textarea name="card_text"
-                  class="checklist__edit">Подключены правильные шрифты, их размеры, цвет и толщина равны соответствующим параметрам в макетах и техническом задании.</textarea>
-              </label>
-            </div>
-          </li>
-          <li class="checklist__item">
-            <div class="checklist__inner">
-              <div class="checklist__controls">
-                <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
-                <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+            </li>
+            <li class="checklist__item">
+              <div class="checklist__inner">
+                <div class="checklist__controls">
+                  <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
+                  <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+                </div>
+                <label class="checklist__box">
+                  <input type="checkbox" name="check-4" class="checklist__checkbox visually-hidden">
+                  <span class="checklist__check-box"></span>
+                  <span class="checklist__name">Единообразное написание и форматирование кода в HTML, файлах CSS-препроцессора и
+                    JavaScript (включая файлы автоматизации).
+                  </span>
+                </label>
               </div>
-              <label class="checklist__box">
-                <input type="checkbox" name="check-4" class="checklist__checkbox visually-hidden">
-                <span class="checklist__check-box"></span>
-                <span class="checklist__name">Единообразное написание и форматирование кода в HTML, файлах CSS-препроцессора и
-                  JavaScript (включая файлы автоматизации).
-                </span>
-              </label>
-            </div>
-          </li>
-        </ul>
-        <h3 class="checklist__subtitle">Готово:</h3>
-        <ul class="checklist__list">
-          <li class="checklist__item checklist__item--complite">
-            <div class="checklist__inner checklist__inner--complite">
-              <div class="checklist__controls">
-                <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
-                <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+            </li>
+          </ul>
+        </div>
+        <div class="checklist__container">
+          <h3 class="checklist__subtitle checklist__subtitle--ready">Готово</h3>
+          <ul class="checklist__list">
+            <li class="checklist__item checklist__item--complite">
+              <div class="checklist__inner checklist__inner--complite">
+                <div class="checklist__controls">
+                  <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
+                  <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+                </div>
+                <label class="checklist__box">
+                  <input type="checkbox" name="check-5" class="checklist__checkbox visually-hidden" checked>
+                  <span class="checklist__check-box"></span>
+                  <span class="checklist__name">Документ проходит проверку на валидность https://validator.w3.org/nu/</span>
+                </label>
               </div>
-              <label class="checklist__box">
-                <input type="checkbox" name="check-5" class="checklist__checkbox visually-hidden" checked>
-                <span class="checklist__check-box"></span>
-                <span class="checklist__name">Документ проходит проверку на валидность https://validator.w3.org/nu/</span>
-              </label>
-            </div>
-          </li>
-          <li class="checklist__item checklist__item--complite">
-            <div class="checklist__inner checklist__inner--complite">
-              <div class="checklist__controls">
-                <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
-                <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+            </li>
+            <li class="checklist__item checklist__item--complite">
+              <div class="checklist__inner checklist__inner--complite">
+                <div class="checklist__controls">
+                  <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
+                  <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+                </div>
+                <label class="checklist__box">
+                  <input type="checkbox" name="check-6" class="checklist__checkbox visually-hidden" checked>
+                  <span class="checklist__check-box"></span>
+                  <span class="checklist__name">В разметке есть правильный вьюпорт тег
+                    <code><meta name="viewport" content="width=device-width, initial-scale=1.0"></code></span>
+                  </span>
+                </label>
               </div>
-              <label class="checklist__box">
-                <input type="checkbox" name="check-6" class="checklist__checkbox visually-hidden" checked>
-                <span class="checklist__check-box"></span>
-                <span class="checklist__name">В разметке есть правильный вьюпорт тег
-                  <code><meta name="viewport" content="width=device-width, initial-scale=1.0"></code></span>
-                </span>
-              </label>
-            </div>
-          </li>
-          <li class="checklist__item checklist__item--complite">
-            <div class="checklist__inner checklist__inner--complite">
-              <div class="checklist__controls">
-                <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
-                <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+            </li>
+            <li class="checklist__item checklist__item--complite">
+              <div class="checklist__inner checklist__inner--complite">
+                <div class="checklist__controls">
+                  <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
+                  <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+                </div>
+                <label class="checklist__box">
+                  <input type="checkbox" name="check-7" class="checklist__checkbox visually-hidden" checked>
+                  <span class="checklist__check-box"></span>
+                  <span class="checklist__name">Для блока, у которого есть фоновое изображение, прописан фоновый цвет, который соответствует
+                    преобладающему...
+                  </span>
+                </label>
+                <button class="checklist__show-button" aria-label="Показать весь текст"></button>
               </div>
-              <label class="checklist__box">
-                <input type="checkbox" name="check-7" class="checklist__checkbox visually-hidden" checked>
-                <span class="checklist__check-box"></span>
-                <span class="checklist__name">Для блока, у которого есть фоновое изображение, прописан фоновый цвет, который соответствует
-                  преобладающему...
-                </span>
-              </label>
-              <button class="checklist__show-button" aria-label="Показать весь текст"></button>
-            </div>
-          </li>
-          <li class="checklist__item checklist__item--complite">
-            <div class="checklist__inner checklist__inner--complite">
-              <div class="checklist__controls">
-                <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
-                <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+            </li>
+            <li class="checklist__item checklist__item--complite">
+              <div class="checklist__inner checklist__inner--complite">
+                <div class="checklist__controls">
+                  <button class="checklist__control checklist__control--edit" aria-label="Редактировать"></button>
+                  <button class="checklist__control checklist__control--delete" aria-label="Удалить"></button>
+                </div>
+                <label class="checklist__box">
+                  <input type="checkbox" name="check-8" class="checklist__checkbox visually-hidden" checked>
+                  <span class="checklist__check-box"></span>
+                  <span class="checklist__name">Критическая функциональность сайта работоспособна без JavaScript (использовано прогрессивное
+                    улучшение).
+                  </span>
+                </label>
               </div>
-              <label class="checklist__box">
-                <input type="checkbox" name="check-8" class="checklist__checkbox visually-hidden" checked>
-                <span class="checklist__check-box"></span>
-                <span class="checklist__name">Критическая функциональность сайта работоспособна без JavaScript (использовано прогрессивное улучшение).
-                </span>
-              </label>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </section>
       <div class="about-popup" style="display: none;">
         <h2 class="about-popup__title">О проекте</h2>
