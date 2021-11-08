@@ -83,6 +83,11 @@
   }
 }
 
+.login__form {
+  display: flex;
+  flex-direction: column;
+}
+
 .login__title {
   margin-top: 0;
   margin-bottom: 43px;
@@ -154,5 +159,16 @@
 
   @media (min-width: $desktop-width) {
     font-size: 21px;
+  }
+}
+
+.login__restore {
+  margin-top: 10px;
+  font-size: 16px;
+  color: $basic-black;
+
+  &:hover,
+  &:focus {
+    color: $basic-green;
   }
 }
